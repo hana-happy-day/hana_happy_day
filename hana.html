@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hana Happy Day</title>
+    <meta name="keyword" content="犬">
+    <meta name="description" content="愛犬の華が大好きでたまらない">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <!-- ハンバーガー -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1><a href="base.html"><img src="img/toppage/banner.png" alt="" width="720" height="90"></a></h1>
+
+        <nav class="hover-text nav">
+            <ul>
+                <li><a href="profile.html"><span class="en">Profile</span><span class="ja">自己紹介</span></a></li>
+                <li><a class="active" href="hana.html"><span class="en">Hana</span><span class="ja">愛犬　華</span></a></li>
+                <li><a href="crochet.html"><span class="en">Crochet</span><span class="ja">かぎ針編み</span></a></li>
+                <li><a href="flute.html"><span class="en">flute</span><span class="ja">フルート</span></a></li>
+            </ul>
+        </nav>
+        <div>
+            <ol>
+                <li><a href="base.html">ホーム</a></li>
+                <li class="path">&gt;&nbsp;Hana</li>
+            </ol>
+        </div>
+    </header>
+    <main  id="hanamain">
+        <section id="body">
+            <div id="hanaanime">
+                <h2>華との出会い</h2>
+                <p>以前、華との出逢いを漫画にしてもらいました。</p>
+
+
+                <div id="mask"></div>
+
+                <div id="moveBtn_Left" class="moveBtn">←</div>
+                <div id="moveBtn_Right" class="moveBtn">→</div>
+
+                <!-- サムネイル画像 -->
+                <div class="thumbnails">
+                    <img class="thumbnail" src="img/hana/hana.PNG" alt="サムネイル画像">
+                    <img class="thumbnail" src="img/hana/hana1.png" alt="サムネイル画像">
+                    <img class="thumbnail" src="img/hana/hana2.png" alt="サムネイル画像">
+                    <img class="thumbnail" src="img/hana/hana3.png" alt="サムネイル画像">
+                    <img class="thumbnail" src="img/hana/hana4.png" alt="サムネイル画像">
+                </div>
+                <p>画像をクリックすると拡大表示されます</p>
+
+                <!-- ポップアップ画像 -->
+                <div id="modal">
+                    <img id="imgPopup" src="img/hana/hana.PNG" alt="ポップアップ画像">
+                    <!-- 閉じるボタン -->
+                    <div id="close">×</div>
+                </div>
+            </div>
+
+        </section>
+        <section id="hanawrap3">
+            <div>
+                <h2>繁殖犬について、知っていますか？</h2>
+
+                <p>&emsp;華は、かつて「繁殖犬」として劣悪な環境で暮らしていました。
+                    狭いケージの中で、陽の光も知らず、愛されることもなく、何度も何度も子犬を産まされてきた子です。引き取った当初は、表情も虚ろで、身体はがりがりに痩せていました。
+                    少しずつ少しずつ、心を開いてくれて 今では私のそばで安心して眠るようになりました。
+                    <br>&emsp;日本にはまだ、華のような環境で苦しんでいる犬たちがたくさんいます。
+                    この現実を、ひとりでも多くの方に知ってもらえたら、 そう願って、このメッセージを書きました。
+                    <br>&emsp;どうか、「繁殖犬」について、少しだけでも心を向けてもらえたらうれしいです。
+                </p>
+            </div>
+            <div>
+                <img src="img/hana/hana.hanshoku.JPEG" alt="" width="415" height="415">
+                <p id="bold">引き取った当初の華</p>
+            </div>
+
+
+        </section>
+
+        <section class="hanawrap4">
+            <h2>毎月増える宝物</h2>
+
+            <p>
+                <img id="hana_trimming_img" src="img/hana/photo1.png" alt="トリミング写真">
+            </p>
+            <button id="btn" onClick="hana_trimming()">Change</button>
+            <p>トリミングに行くとかわいいフォトスタジオで
+                毎回撮影してくれます。</p>
+
+        </section>
+        <section id="hanawrap5">
+            <div id="hanatext">
+                <h2>たくさんのお友達に恵まれて…</h2>
+                <p id="hanamessage">
+                    華はたくさんのお友達が出来ました！
+                    他のわんちゃんとの接し方がわからない華。
+                    仲良くすることは難しいし、しつこくされるのは怖い。
+                    でも、華のお友達はみんな、程よい距離感で過ごしてくれるので、華も安心できている様子。
+                </p>
+                <p id="strong">これからもたくさん遊んで思い出作ろうね！</p>
+            </div>
+            <div>
+                <img src="img/hana/friend.JPEG" alt="" width="580" height="580">
+            </div>
+        </section>
+    </main>
+    <section id="footer" class="footer">
+        <div id="sitemap">
+            <h2>サイトマップ</h2>
+            <ul class="hover-text">
+                <li><a href="profile.html"><span class="en">Profile</span><span class="ja">自己紹介</span></a></li>
+                <li><a href="hana.html"><span class="en">Hana</span><span class="ja">愛犬　華</span></a></li>
+                <li><a href="crochet.html"><span class="en">Crochet</span><span class="ja">かぎ針編み</span></a></li>
+                <li><a href="flute.html"><span class="en">flute</span><span class="ja">フルート</span></a></li>
+            </ul>
+        </div>
+        <div>
+            <img class="img" src="img/toppage/hana_footer.png" alt="" width="614" height="747">
+        </div>
+    </section>
+
+
+    <footer>
+        <a href="hana.html" id="page-top">TOP</a>
+        <a href="base.html">&copy Hana Happy Day</a>
+    </footer>
+
+</body>
+
+</html>
