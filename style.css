@@ -1,0 +1,1565 @@
+@charset "utf-8";
+
+/* ベース */
+
+body {
+    color: #555168;
+    text-decoration: none;
+    max-width: 1220px;
+    margin: 20px auto;
+    /* ← 中央寄せ */
+}
+
+body a {
+    color: #555168;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+main {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.yajirushi {
+    height: 80px;
+    width: 80px;
+}
+
+
+a:hover {
+    color: #e06b7b;
+
+}
+
+.yajirushi:hover {
+    transform: translate(30px, 0);
+}
+
+.img {
+    border-radius: 5%;
+}
+
+footer {
+    background-color: #eebcbb;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* 画面端の余白対策（オプション） */
+}
+
+hr {
+    border: #e06b7b 1px dotted;
+    margin: 100px auto;
+}
+
+/* パンくずリスト */
+div ol {
+    display: flex;
+    padding: 0 5px;
+    margin-left: 100px;
+
+}
+
+.path {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* ヘッダー */
+.hover-text .en {
+    font-size: 22px;
+    letter-spacing: 0.05em;
+}
+
+header h1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 100px;
+}
+
+header nav {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+header ul {
+    display: flex;
+    gap: 150px;
+    justify-content: space-around;
+}
+
+nav li {
+    padding: 5px 20px;
+}
+
+nav ul li a {
+    font-size: 24px;
+}
+
+/* ヘッダーレスポンシブ */
+@media screen and (max-width:767px) {
+
+    #header {
+        margin-bottom: 100px;
+        padding: 0;
+    }
+
+    #header nav {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        background-color: #f5d7d6;
+    }
+
+    #header ul {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav li {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    header img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+
+
+/* マウスホバー */
+nav li:hover {
+    padding: 5px 20px;
+    border-bottom: #e06b7b 1px dotted;
+    border-top: #e06b7b 1px dotted;
+    border-right: #e06b7b 1px dotted;
+    border-left: #e06b7b 1px dotted;
+
+}
+
+/* active 開いているページのナビだけ色が変わる */
+a.active {
+    background-color: #eebcbb;
+    color: #fff;
+    padding: 5px 20px;
+
+}
+
+.active:hover {
+    background-color: #f5d7d6;
+
+}
+
+/* マウスを乗せたら日本語表記 */
+.hover-text .ja {
+    display: none;
+}
+
+.hover-text li:hover .en {
+    display: none;
+}
+
+.hover-text li:hover .ja {
+    display: inline;
+    font-size: 50%;
+
+}
+
+/* メイン */
+.text-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-link:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#text-link p,
+#text-link h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#basemain {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 200px;
+    padding: 10px;
+    border: 2px dotted #eebcbb;
+
+}
+
+#mainimg {
+    height: 450px;
+    width: 450px;
+}
+
+#basemain div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#basemain h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 0;
+}
+
+#basemain div p {
+    text-align: center;
+}
+
+#basemain #sub {
+    font-size: 15px;
+}
+
+#basemain #text {
+    font-size: 17px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#sub {
+    margin: 30px 0 0 0;
+}
+
+/* メインのレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    #basemain {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 0;
+        border: none;
+    }
+
+    #basemain img {
+        width: 250px;
+        height: auto;
+    }
+
+    #basemain h1 {
+        font-size: 20px;
+    }
+
+    #basemain p {
+        font-size: 12px;
+    }
+
+}
+
+/* セクションプロフ */
+
+section h2 {
+    font-size: 35px;
+}
+
+section a img {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+section .yaji {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+/* 画像 */
+#wrap ul {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#wrap li {
+    width: 300px;
+}
+
+#wrap h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#wrap p {
+    margin-top: 0;
+}
+
+#wrap img {
+    border-radius: 50%;
+}
+
+#wrap {
+    margin-bottom: 200px;
+}
+
+#wrap h2 {
+    text-align: center;
+    /* ◎ 中央揃え */
+    margin: 0 auto;
+}
+
+
+/* wrapのレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    #wrap ul {
+        display: block;
+    }
+
+    #wrap li {
+        margin: 10px auto;
+        padding: 0;
+        font-size: 90%;
+        text-align: center;
+    }
+
+    #wrap {
+        width: 80%;
+    }
+
+    #wrap .profimg {
+        width: 200px;
+        height: auto;
+    }
+}
+
+/* セクション華 */
+#wrap2 h2 {
+    font-size: 28px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+#wrap2 p {
+    margin-top: 0;
+    font-size: 15px;
+    width: 347px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#wrap2 {
+    display: flex;
+    gap: 100px;
+    margin: 200px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#hana img {
+    width: 800px;
+    height: auto;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    #wrap2 {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #hana img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto 100px auto;
+    }
+
+    #wrap2 h2 {
+        max-width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    #wrap2 p {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .yaji h2 {
+        margin-right: 20px;
+
+    }
+
+    .yaji a {
+        margin-left: 0;
+    }
+
+    .yajirushi {
+        width: 40px;
+        height: auto;
+
+    }
+
+    #wrap2 .yaji {
+        position: relative;
+        display: block;
+        padding: auto;
+    }
+
+    #wrap2 a img {
+        position: absolute;
+        bottom: 1px;
+        left: -5px;
+    }
+
+    #wrap3 a img {
+        right: 100px;
+    }
+
+}
+
+
+/* 編み物 */
+#wrap3 {
+    margin-bottom: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#wrap3 div h2 {
+    font-size: 30px;
+    width: 300px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+#wrap3 div p {
+    font-size: 20px;
+    width: 500px;
+    margin-top: 0;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+#wrap3 div img {
+    position: absolute;
+    bottom: 50px;
+    right: 400px;
+}
+
+#wrap3img {
+    width: 1000px;
+    height: auto;
+}
+
+#crochettext {
+    position: absolute;
+    bottom: 15px;
+    left: 200px;
+    text-shadow:
+        1px 1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff;
+}
+
+@media screen and (max-width: 767px) {
+    #wrap3 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 子要素を中央寄せ */
+        text-align: center;
+        /* テキスト中央揃え（任意） */
+
+    }
+
+    #wrap3 img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto 100px auto;
+    }
+
+
+
+    #wrap3 .yajirushi {
+        position: absolute;
+        bottom: -50px;
+        left: 20px;
+    }
+
+    #crochettext {
+        position: absolute;
+        bottom: -80px;
+        left: auto;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    #wrap3 div h2 {
+        max-width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+
+
+    }
+
+    #wrap3 div p {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 300px;
+        font-size: 14px;
+    }
+}
+
+/* フルート */
+
+#wrap4 {
+    margin-bottom: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+#wrap4 div h2 {
+    font-size: 30px;
+    width: 300px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+}
+
+#wrap4 div p {
+    font-size: 20px;
+    width: 500px;
+    margin-top: 0;
+}
+
+#flutetext {
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+    text-shadow:
+        1px 1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff;
+}
+
+#wrap4img {
+    width: 1000px;
+    height: auto;
+}
+
+#wrap4 div img {
+    position: absolute;
+    bottom: 50px;
+    right: 400px;
+}
+
+@media screen and (max-width: 767px) {
+    #wrap4 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 子要素を中央寄せ */
+        text-align: center;
+        /* テキスト中央揃え（任意） */
+
+    }
+
+    #wrap4 img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto 100px auto;
+    }
+
+
+    #wrap4 .yajirushi {
+        position: absolute;
+        bottom: -90px;
+        left: 40px;
+    }
+
+    #flutetext {
+        position: absolute;
+        bottom: -50px;
+        left: 20px;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    #wrap4 div h2 {
+        max-width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    #wrap4 div p {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* サイトマップ */
+.footer {
+    background-color: #f5d7d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#footer {
+    display: flex;
+    gap: 250px;
+}
+
+.footer img {
+    display: block;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#sitemap {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sitemap h2 {
+    font-size: 18px;
+    margin: 0 0 15px 270px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#sitemap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-left: 250px;
+}
+
+#sitemap li a {
+    letter-spacing: 0.05em;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+    #sitemap {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        /* セクション全体のテキストを中央に */
+    }
+
+    #sitemap h2 {
+        text-align: center;
+        font-size: 24px;
+        padding-left: 0;
+        display: block;
+        margin-top: 20px;
+        margin-right: 250px;
+    }
+
+    #sitemap ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #sitemap li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #sitemap li a {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/***トップへ戻るボタン***/
+#page-top {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #555168;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+
+/***トップへ戻るボタンここまで***/
+/* 自己紹介ページ */
+section {
+    margin-bottom: 200px;
+}
+
+#profmain {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 20px;
+}
+
+#profmain h1 {
+    margin-bottom: 50px;
+    padding: 0;
+    line-height: 1;
+    font-size: 100px;
+}
+
+#profmain p {
+    line-height: 1;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+#mainimg {
+    margin: 10px;
+}
+
+#profwrap {
+    display: flex;
+    gap: 120px;
+}
+
+#profwrap img {
+    margin-left: 50px;
+}
+
+#profwrap #myself {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* border: 1px solid red; */
+
+#profwrap2 {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+}
+
+#profwrap2 li {
+    list-style-type: circle;
+}
+
+#profwrap2 h2 {
+    font-size: 50px;
+}
+
+#profwrap2 li {
+    font-size: 20px;
+}
+
+#profwrap2 p {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#love h2 {
+    margin-top: 150px;
+}
+
+#profwrap2 ul {
+    display: flex;
+    gap: 20px;
+}
+
+#love img {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+#dayoff {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+
+}
+
+#dayoff h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#dayoff img {
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    #profmain h1 {
+        font-size: 300%;
+        line-height: 1;
+        margin: 20px auto 10px auto;
+        text-align: center;
+    }
+
+    #profmain p {
+        margin: 0 auto 50px auto;
+        text-align: center;
+    }
+
+    #profilefont h2 {
+        font-size: 200%;
+    }
+
+    #profmain {
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+        margin: 20px auto 0 auto;
+
+    }
+
+    .nikukyu {
+        display: none;
+
+    }
+
+    #mainimg img {
+        margin-left: 100px;
+    }
+
+    #profwrap {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #profwrap img {
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+    }
+
+    #myself h2 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #myself p {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #profwrap2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #profwrap2 h2 {
+        text-align: center;
+    }
+
+    #profwrap2 ul {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    #profwrap2 li {
+        text-align: left;
+    }
+
+    #profwrap3 ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .proftext {
+        text-align: left;
+    }
+
+    #footer img {
+        display: none;
+    }
+}
+
+
+/* 普段 */
+#profwrap3 {
+    margin: 10px 30px 200px 30px;
+    padding: 0;
+    text-align: center;
+}
+
+#profwrap3 ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+#profwrap3 li {
+    width: 90%;
+    /* ← 幅を指定して均等配置に */
+    padding: 0;
+
+}
+
+#profwrap3 h3 {
+    text-align: center;
+}
+
+.proftext {
+    margin: 0 40px 0 0;
+}
+
+/* 華のページ */
+/* ポップアップ画像 */
+#body {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#hanaanime img {
+    margin: 10px 20px;
+    width: 15%;
+    height: auto;
+}
+
+#hanaanime img:nth-of-type(1) {
+    margin-left: 0;
+}
+
+#hanaanime img:nth-of-type(5) {
+    margin-right: 0;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    /* 画像の間隔 */
+    margin: 20px 0;
+    overflow-x: auto;
+    /* スマホではみ出しても横スクロールできるように */
+}
+
+.thumbnail {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mask {
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    inset: 0;
+    /* z-index: 9998; */
+    opacity: 0;
+    visibility: hidden;
+}
+
+#modal {
+    background: #fff;
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    align-items: center;
+    /* 縦中央 */
+    justify-content: center;
+    /* 横中央 */
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* 移動ボタン */
+.moveBtn {
+    width: 80px;
+    height: 80px;
+    line-height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.moveBtn:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#moveBtn_Left {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    /*ふわっと表示*/
+}
+
+#moveBtn_Right {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    /*ふわっと表示*/
+}
+
+
+/* ポップアップ画像ここまで */
+
+
+#hanawrap3 {
+    display: flex;
+    gap: 50px;
+    margin: 10px 50px 200px 50px;
+}
+
+#hanawrap3 img {
+    border-radius: 50%;
+}
+
+#bold,
+#hanawrap3 h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#hanawrap3 h2 {
+    margin-top: 100px;
+}
+
+/* トリミング写真 */
+.hanawrap4 {
+    max-width: 1220px;
+    margin: 0 auto 200px;
+    /* 画面中央に配置 */
+
+}
+
+.hanawrap4 ul {
+    display: flex;
+    justify-content: center;
+    /* ← space-aroundだと左右に余白が出にくい */
+    gap: 50px;
+    padding: 0;
+    margin: 0 auto;
+    /* ← 中央寄せのカギ */
+}
+
+.hanawrap4 li {
+    list-style: none;
+}
+
+.hanawrap4 img {
+    border-radius: 50%;
+}
+
+.hanawrap4 h2,
+.hanawrap4 p {
+    text-align: center;
+}
+
+#btn {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background-color: #eebcbb;
+    color: #555168;
+    border: #e06b7b 1px dotted;
+}
+
+
+/* お友達 */
+#hanawrap5 {
+    display: flex;
+    gap: 50px;
+    margin: 10px 50px 200px 50px;
+}
+
+#strong {
+    font-weight: bold;
+}
+
+#hanatext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#hanamessage {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* hana.htmlのレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    #hanamain {
+        width: 80%;
+        padding: 0;
+        margin: auto;
+    }
+
+    #hanamain h2 {
+        font-size: 200%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .thumbnails {
+        display: flex;
+        /* フレックスボックス */
+        flex-direction: column;
+        /* 縦に並べる */
+        align-items: center;
+        /* 子要素を中央揃え（横方向中央） */
+        gap: 10px;
+        /* 画像間の隙間 */
+        padding: 0;
+        margin: 0 auto;
+        /* 親要素自体をページ中央に */
+        
+        
+    }
+
+
+    .thumbnail {
+        display: block;
+        /* ブロック要素化 */
+        margin: 0;
+        /* 余白リセット */
+    }
+
+
+    #hana_trimming_img {
+        width: 250px;
+        height: auto;
+    }
+
+    #hanawrap3,
+    #hanawrap5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hanawrap3 h2 {
+        font-size: 0.8em;
+    }
+
+    #hanawrap3 img {
+        width: 250px;
+        height: auto;
+    }
+
+    #hanawrap5 img {
+        width: 350px;
+        height: auto;
+    }
+
+}
+
+
+
+/* 編み物ページ */
+#crochetmain {
+    display: flex;
+    justify-content: space-around;
+}
+
+#crochet h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#crochet {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#crowrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+
+#crowrap2 h2 {
+    text-align: center;
+}
+
+#crowrap2 {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+#crowrap2 img {
+    margin: 10px 50px;
+}
+
+#crowrap2 div {
+    width: 500px;
+}
+
+#crowrap3 {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-bottom: 200px;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+
+}
+
+#crowrap3 img {
+    margin-left: 20px;
+}
+
+/* フルート */
+#flutemain {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#flutemain {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding: 5px 20px;
+}
+
+#fluteh2 h2 {
+    text-align: center;
+}
+
+#flutewrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 編み物ページのレスポンシブ対応 */
+
+@media screen and (max-width: 767px) {
+    #crochemain h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #crowrap2 p,
+    #crowrap3 {
+        padding: 20px;
+        width: 80%;
+        margin: 5px auto;
+
+    }
+
+
+    #crochetmain,
+    #crowrap {
+        display: block;
+        text-align: center;
+    }
+
+    .croimg {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+
+    }
+
+    .croimg2 {
+        width: 300px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    #crowrap .croimg {
+        margin-top: 0;
+    }
+
+    #crochet {
+        margin-bottom: 0;
+    }
+
+    #crowrap {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    #crowrap3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+    }
+
+    #crowrap3 p {
+        font-size: 18px;
+    }
+
+    #crowrap3 img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* フルートページのレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    #flutemain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 5px auto 50px auto;
+
+    }
+
+    #flutemain p {
+        max-width: 80%;
+    }
+
+    #flutemain img {
+        width: 300px;
+        height: auto;
+    }
+
+    #fluteh2 h2 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    #flutewrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #flutewrap img {
+        width: 250px;
+        height: auto;
+    }
+
+
+}
+
+/* レスポンシブ */
+/* ハンバーガー */
+@media screen and (max-width:767px) {
+
+    /* 三本線の表示 */
+    #header .hamburger {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: fixed;
+        top: 5px;
+        right: 10px;
+        z-index: 30;
+    }
+
+    #header .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #555168;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        transition: all 0.4s;
+    }
+
+    #header .hamburger span:nth-of-type(1) {
+        top: 16px;
+    }
+
+    #header .hamburger span:nth-of-type(2) {
+        top: 25px;
+    }
+
+    #header .hamburger span:nth-of-type(3) {
+        top: 34px;
+    }
+
+    /* 三本線を押したとき表示されるメニュー */
+    #header .nav {
+        width: 50%;
+        height: 90%;
+        background-color: #e06b7b;
+        position: fixed;
+        top: 0;
+        right: -80%;
+        z-index: 20;
+        transition: all 0.6s;
+    }
+
+    #header .nav ul {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0;
+        overflow: auto;
+    }
+
+    #header .nav li {
+        padding: 10px 0;
+        margin-left: 0;
+    }
+
+    #header .nav.active {
+        right: 0;
+    }
+
+    #header .hamburger .active span:nth-of-type(1) {
+        top: 24px;
+        transform: rotate(-45deg);
+    }
+
+    #header .hamburger .active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #header .hamburger .active span:nth-of-type(3) {
+        top: 24px;
+        transform: rotate(45deg);
+    }
+}
